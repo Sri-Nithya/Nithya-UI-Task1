@@ -1,0 +1,290 @@
+
+body {
+  background-color: rgba(173, 204, 251, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.wrapper {
+  background-color: #ececfe;
+  min-width: 95%;
+  min-height: 90%;
+  margin: 2rem;
+  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: inline-block;
+  position: relative;
+  display: flex;
+}
+.home_icon {
+  padding-top: 1rem;
+  height: 2.5rem;
+}
+.back_arrow_icon {
+  height: 2.5rem;
+}
+.vertical_nav_bar {
+  flex-direction: column;
+  background-color: #3e43c8;
+  padding: 1rem 1rem 0.9rem 1rem;
+  min-height: 95%;
+  min-width: 2.5rem;
+  border-radius: 2rem 0rem 0rem 2rem;
+  position: relative;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    "item1  item2  item3  item4"
+    "item5  item5  item7  item6"
+    "item5  item5  item7  item6"
+    ;
+  gap: 0.3rem;
+  background-color: #ecebfa;
+  padding: 1rem;
+  min-height: 90%;
+  min-width: 93%;
+  border-radius: 0 2rem 2rem 0;
+  position: relative;
+}
+.grid-container2 > div {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.6rem;
+  display: inline-block;
+  position: relative;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+/* First Component */
+
+.item1 {
+  grid-area: item1;
+  min-height: 3rem;
+  min-width: 5rem;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+}
+.header_text_picklist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_text_picklist > div {
+  padding: 0.2rem;
+  font-weight: bold;
+}
+.increasing_val {
+  padding: 0.5rem;
+  min-width: 10rem;
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.decreasing_val {
+  /* font-size: smaller; */
+  padding: 0.5rem;
+  min-width: 10rem;
+  /* font-size: 2rem; */
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* second component */
+
+.item2 {
+  grid-area: item2;
+  min-height: 5rem;
+  min-width: 10rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+table {
+  border-radius: 2rem;
+  border-collapse: collapse;
+  color: black;
+  overflow: auto;
+}
+td {
+  font-weight: bold;
+  text-align: center;
+  color: #b3b3b1;
+}
+.cal_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.highlighted {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2rem;
+}
+
+/* third component */
+
+.item3 {
+  grid-area: item3;
+  min-height: 5rem;
+  min-width: 5rem;
+}
+.flex_Continer {
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem; */
+}
+.flex_Continer > div {
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: start;
+  border-radius: 0.5rem;
+}
+.flex_Continer > span {
+  text-align: start;
+  padding-left: 1.3rem;
+}
+
+/* fourth component: Wave Chart */
+
+.item4 {
+  grid-area: item4;
+  padding: 3rem;
+  min-height: 5rem;
+  width: 15rem;
+}
+.circle1 {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rem solid whitesmoke;
+  border-top: 2rem solid #766ce6;
+  border-right: 2rem solid #ff8b61;
+  border-left: 2rem solid #ff8b61;
+  border-bottom: 2rem solid #ff8b61;
+  margin: 1rem;
+}
+
+.line1 {
+  width: 2px;
+  height: 120px; 
+  background-color: #b8b8b6;
+  position: absolute;
+  top: 10%;
+  left: 48%;
+  transform-origin: 50% 50%;
+  transform: translateX(-50%) rotate(132deg);
+  align-self: center;
+}
+
+
+.text-above, .text-below {
+  position: absolute;
+  /* font-size: x-large; */
+  font-weight: bolder;
+}
+
+.text-above {
+  top: 3rem;
+  left: 60%;
+  transform: translateX(-40%);
+}
+
+.text-below {
+  bottom: 3rem;
+  left: 30%;
+  transform: translateX(-40%);
+}
+
+/* <!-- Fifth Component: Smooth Line Chart --> */
+
+.item5 {
+  grid-area: item5;
+  padding: 0.5rem;
+  min-width: 4rem;
+}
+
+/* sixth component : Search Bar*/
+
+.item6 {
+  grid-area: item6;
+}
+.search-container {
+  margin: 1rem;
+  min-width: 13rem;
+  border-radius: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.search-input {
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  margin-left: 0.5rem;
+}
+
+.search-button {
+  background-color: #afafe0;
+  background-color: none;
+  border: none;
+  border-radius: 12rem;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
+/* seventh component */
+
+.item7 {
+  grid-area: item7;
+  padding: 1.5rem;
+  display: flex;
+  max-width: 16rem;
+}
+.circle {
+  width: 9rem;
+  height: 9rem;
+  border: 10px solid whitesmoke;
+  border-top: 10px solid #6e67f5;
+  border-left: 10px solid #6e67f5;
+  border-bottom: 10px solid #b4b8ed;
+  border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 30px; */
+  font-weight: bold;
+  color: #75756d;
+  padding: 1rem;
+  margin-left: 0.8rem;
+}
+
+/* <!-- eighth Component  --> */
+.item6 {
+  grid-area: item6;
+}
+
+
+
+
+
+
+
